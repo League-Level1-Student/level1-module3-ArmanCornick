@@ -56,6 +56,7 @@ public class Canvas {
     }
 
     public void addCircle(Circle circle) {
+    	
         circles.add(circle);
 
         // Must place after adding new circle

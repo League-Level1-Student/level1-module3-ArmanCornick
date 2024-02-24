@@ -68,7 +68,7 @@ public class StaticKeywordDemo {
     }
     
     void addCircles() {
-        
+    	
         Circle circle1 = new Circle(20, Color.BLUE);
         Circle circle2 = new Circle(50, Color.RED);
         Circle circle3 = new Circle(100, Color.GREEN);
@@ -76,5 +76,8 @@ public class StaticKeywordDemo {
         canvas.addCircle(circle1);
         canvas.addCircle(circle2);
         canvas.addCircle(circle3);
+        
+        System.out.println("circle radius = " + circle1.radius);
+    	System.out.println("circle color = " + circle1.color);
     }
 }
