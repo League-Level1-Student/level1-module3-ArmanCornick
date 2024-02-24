@@ -67,15 +67,15 @@ public class StaticKeywordDemo {
         addCircles();
     }
     
-    void addCircles() {
+    static void addCircles() {
     	
         Circle circle1 = new Circle(20, Color.BLUE);
         Circle circle2 = new Circle(50, Color.RED);
         Circle circle3 = new Circle(100, Color.GREEN);
         
-        canvas.addCircle(circle1);
-        canvas.addCircle(circle2);
-        canvas.addCircle(circle3);
+        static canvas.addCircle(circle1);
+        static canvas.addCircle(circle2);
+        static canvas.addCircle(circle3);
         
         System.out.println("circle radius = " + circle1.radius);
     	System.out.println("circle color = " + circle1.color);
