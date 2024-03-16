@@ -2,6 +2,8 @@ package _06_frogger;
 
 import processing.core.PApplet;
 
+
+
 public class Frogger extends PApplet {
 	static final int WIDTH = 800;
 	static final int HEIGHT = 600;
@@ -12,7 +14,12 @@ public class Frogger extends PApplet {
 	Car car3;
 	Car car4;
 	Car car5;
-	public void keyPressed()
+	Car car6;
+	Car car7;
+	Car car8;
+	Car car9;
+	Car car10;
+	public void keyReleased()
 	{
 		if(key == CODED){
 			if(keyCode == UP)
@@ -54,6 +61,11 @@ public class Frogger extends PApplet {
 		car3 = new Car(750,450,8,75);
 		car4 = new Car(200,450,8,75);
 		car5 = new Car(600,450,8,75);
+		car6 = new Car(0,200,10,100);
+		car7 = new Car(400,200,10,100);
+		car8 = new Car(750,200,10,100);
+		car9 = new Car(200,200,10,100);
+		car10 = new Car(600,200,10,100);
 	}
 
 	@Override
@@ -66,11 +78,21 @@ public class Frogger extends PApplet {
 		car3.display();
 		car4.display();
 		car5.display();
+		car6.display();
+		car7.display();
+		car8.display();
+		car9.display();
+		car10.display();
 		car1.carX += car1.carSpeed;
 		car2.carX += car2.carSpeed;
 		car3.carX += car3.carSpeed;
 		car4.carX += car4.carSpeed;
 		car5.carX += car5.carSpeed;
+		car6.carX += car6.carSpeed;
+		car7.carX += car7.carSpeed;
+		car8.carX += car8.carSpeed;
+		car9.carX += car9.carSpeed;
+		car10.carX += car10.carSpeed;
 		if(car1.carX > 800) {
 			car1.carX = -100;	
 		}
@@ -103,6 +125,41 @@ public class Frogger extends PApplet {
 			y = 550;
 		}
 		if(intersects(car5)) {
+			x = 400;
+			y = 550;
+		}
+		if(car6.carX > 800) {
+			car6.carX = -100;	
+		}
+		if(car7.carX > 800) {
+			car7.carX = -100;	
+		}
+		if(car8.carX > 800) {
+			car8.carX = -100;	
+		}
+		if(car9.carX > 800) {
+			car9.carX = -100;	
+		}
+		if(car10.carX > 800) {
+			car10.carX = -100;
+		}
+		if(intersects(car6)) {
+			x = 400;
+			y = 550;
+		}
+		if(intersects(car7)) {
+			x = 400;
+			y = 550;
+		}
+		if(intersects(car8)) {
+			x = 400;
+			y = 550;
+		}
+		if(intersects(car9)) {
+			x = 400;
+			y = 550;
+		}
+		if(intersects(car10)) {
 			x = 400;
 			y = 550;
 		}
